@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #C56767;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    background-color: bisque;
+    border: 1px solid black;
+    width: 80%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 4fr 1fr;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.back-btn, .next-btn{
+    font-size: 100px;
+    color:tomato;
+    border: none;
+    background-color:inherit;
+    width: 8rem;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+.back-btn:hover, .next-btn:hover{
+    background-color: aliceblue;
+}
+
+.back{
+grid-column:1 /2 ;
+grid-row: 1 / 2;
+}
+
+.next{
+    grid-column:3 /4 ;
+    grid-row: 1 / 2;
+}
+
+.image{
+    border: 5px solid black;
+grid-column: 2 / 3;
+grid-row: 1 / 2;
+width: 100%;
+height: 90%;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider{
+    border-radius: 20px;
+    background-color:#D7BDE2;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+grid-column: 2 / 3;
+grid-row: 2 / 3;
+}
+
+.slider > div{
+    width: fit-content;
+    height: fit-content;
+border-radius: 100%;
+}
+
+.slider > div img{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.img-active{
+    border: 5px solid green;
+}
